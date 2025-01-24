@@ -311,6 +311,10 @@ body {
     border-radius: 12px;
   }
 
+  .recipe-page__text-content {
+    padding: 0;
+  }
+
   .recipe-page__header__title {
     font-size: 2.5rem;
   }
