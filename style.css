@@ -125,6 +125,7 @@ body {
   font-family: 'Young Serif';
   font-size: 2.25rem;
   color: var(--title-color);
+  font-weight: 400;
 }
 
 .recipe-page__header__description {
@@ -180,7 +181,7 @@ body {
 .recipe-page__heading {
   font-family: 'Young Serif';
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--heading-text-color);
 }
 
