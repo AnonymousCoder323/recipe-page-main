@@ -37,7 +37,10 @@
   --accent-text-color: hsl(332, 51%, 32%);
   --accent-background-color: hsl(330, 100%, 98%);
   --hr-color: hsl(30, 18%, 87%);
-  --link-color: hsl(14, 45%, 36%);
+  --article-link-color: hsl(14, 45%, 36%);
+  --body-link-color: hsl(332, 51%, 32%);
+  --background-color: hsl(30, 54%, 90%);
+  --article-background-color: hsl(0, 0%, 100%);
 }
 
 /* UTILITY */
@@ -92,6 +95,13 @@
 
 body {
   font-family: 'Outfit';
+  background-color: var(--background-color);
+  display: grid;
+  place-content: center;
+}
+
+.recipe-page {
+  background-color: var(--article-background-color);
 }
 
 .recipe-page__top-img {
@@ -277,7 +287,36 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: var(--article-background-color);
 }
 .attribution a {
-  color: var(--link-color);
+  color: var(--article-link-color);
+}
+
+@media (width >= 736px) {
+  body {
+    padding: 8rem 3rem;
+  }
+
+  .recipe-page {
+    width: min(736px, 80.2vw);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    border-radius: 24px;
+  }
+
+  .recipe-page__top-img {
+    border-radius: 12px;
+  }
+
+  .recipe-page__header__title {
+    font-size: 2.5rem;
+  }
+
+  .attribution {
+    background: none;
+    margin-top: 1rem;
+  }
 }
