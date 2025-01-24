@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
 /* VARIABLES */
 
 /* - White: hsl(0, 0%, 100%)
